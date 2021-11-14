@@ -1,0 +1,643 @@
+/* 
+*
+* Customer home page */
+
+.CustomerHome .header {
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CustomerHome .header .header_image {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.CustomerHome .header .location_input {
+    z-index: 4;
+}
+
+.CustomerHome .header .user {
+    z-index: 5;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background-color: var(--darkred);
+    padding: 1%;
+    border-radius: 50%;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.CustomerHome .header .dropdown {
+    background-color: var(--white);
+    position: absolute;
+    top: 15%;
+    right: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1%;
+    width: auto;
+    height: 100px;
+    border-radius: 5px 0 5px 5px;
+    color: var(--darkred);
+    text-align: right;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.CustomerHome .header .dropdown span:nth-child(2) {
+    cursor: pointer;
+}
+
+.CustomerHome .header .open {
+    opacity: 1;
+}
+
+.CustomerHome .header .location_input input {
+    width: 50vw;
+    height: 50px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    padding-left: 5%;
+    font-size: 1.2em;
+}
+
+.CustomerHome h1 {
+    margin: 3%;
+    font-size: 1.7rem;
+}
+
+.CustomerHome .restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.CustomerHome .restaurants a.restaurant_card {
+    display: inline-block;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    margin: 3%;
+}
+
+.CustomerHome .restaurants a.restaurant_card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.35);
+    transition: 0.5s;
+}
+
+.CustomerHome .restaurants a.restaurant_card .restaurant_thumbnail {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.CustomerHome .restaurants a.restaurant_card:hover .restaurant_thumbnail {
+    transform: scale(1.2);
+}
+
+.CustomerHome .restaurants a.restaurant_card:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.CustomerHome .restaurants a.restaurant_card .restaurant_name {
+    z-index: 3;
+    color: var(--white);
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+
+/*
+*
+*Restaurant page*/
+
+.RestaurantPage .Restaurant_header {
+    width: 100%;
+    height: 60vh;
+    position: relative;
+}
+
+.RestaurantPage .Restaurant_header .header_image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.RestaurantPage .Restaurant_header .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.RestaurantPage .Restaurant_header .restaurant_info {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    color: var(--white);
+    font-size: 1.5em;
+}
+
+.RestaurantPage .Restaurant_menu {
+    padding: 5% 20%;
+}
+
+.RestaurantPage .Restaurant_menu>h1 {
+    color: var(--darkred);
+    font-size: 2.5rem;
+    border-bottom: 2px solid var(--darkred);
+    display: inline;
+}
+
+.RestaurantPage .Restaurant_menu .menu_items {
+    margin-top: 5%;
+}
+
+.RestaurantPage .Restaurant_menu .menu_items .menu_item {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 0;
+    border-bottom: 1px solid var(--black);
+}
+
+.RestaurantPage .Restaurant_menu .menu_items .menu_item .item_details h1 {
+    font-size: 2rem;
+}
+
+.RestaurantPage .Restaurant_menu .menu_items .menu_item .rating {
+    background-color: green;
+    color: var(--white);
+    padding: 3%;
+}
+
+.RestaurantPage .Restaurant_menu .menu_items .menu_item .rating i {
+    margin-left: 10px;
+}
+
+.RestaurantPage .Restaurant_menu .menu_items .menu_item button {
+    display: block;
+    padding: 5px;
+    font-size: 1.15rem;
+    background-color: var(--lightred);
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    color: var(--white);
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.RestaurantPage .Restaurant_menu .menu_items .menu_item button span {
+    cursor: pointer;
+}
+
+.RestaurantPage .Restaurant_menu .subtotal {
+    background-color: var(--lightred);
+    padding: 3%;
+    border-radius: 10px;
+    margin-top: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--white);
+}
+
+.RestaurantPage .Restaurant_menu .subtotal a {
+    text-decoration: none;
+    color: var(--white);
+    margin-left: 5%;
+}
+
+.RestaurantPage .Restaurant_menu .subtotal button {
+    background-color: green;
+    display: block;
+    padding: 5px 20px;
+    font-size: 1.15rem;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    color: var(--white);
+    cursor: pointer;
+    width: 100%;
+}
+
+.RestaurantPage .Restaurant_menu .subtotal button:hover {
+    background-color: var(--darkred);
+    transition: 0.3s;
+    transform: scale(1.125);
+}
+
+
+/*
+*
+* Restaurant dashboard*/
+
+.RestaurantDash .dash_header {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+}
+
+.RestaurantDash .dash_header .header_image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.RestaurantDash .dash_header .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.RestaurantDash .dash_header .restaurant_info {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    color: var(--white);
+    font-size: 1.5em;
+}
+
+.RestaurantDash .sections {
+    position: relative;
+    display: flex;
+    height: 60vh;
+}
+
+.RestaurantDash .sections .sidebar {
+    position: sticky;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    background-color: grey;
+    overflow: hidden auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.RestaurantDash .sections .sidebar a {
+    font-size: 1.2rem;
+    color: var(--white);
+    margin: 5%;
+    text-decoration: none;
+}
+
+.RestaurantDash .sections .sidebar a:hover {
+    text-decoration: underline;
+}
+
+.RestaurantDash .sections .sidebar a i {
+    display: none;
+}
+
+.RestaurantDash .sections .main {
+    height: 60vh;
+    overflow-y: scroll;
+    padding: 5% 10%;
+    width: 80%;
+}
+
+.RestaurantDash .sections .main>h1 {
+    color: var(--darkred);
+    font-size: 2.5rem;
+    border-bottom: 2px solid var(--darkred);
+    display: inline;
+}
+
+.RestaurantDash .sections .main .menu_items {
+    margin-top: 5%;
+}
+
+.RestaurantDash .sections .main .menu_items .menu_item {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 0;
+    border-bottom: 1px solid var(--black);
+}
+
+.RestaurantDash .sections .main .menu_items .menu_item .item_details h1 {
+    font-size: 2rem;
+}
+
+.RestaurantDash .sections .main .menu_items .menu_item .rating {
+    background-color: green;
+    color: var(--white);
+    padding: 3%;
+}
+
+.RestaurantDash .sections .main .menu_items .menu_item .rating i {
+    margin-left: 10px;
+}
+
+.RestaurantDash .sections .main .menu_items .menu_item button {
+    display: block;
+    padding: 5px 20px;
+    font-size: 1.15rem;
+    background-color: var(--lightred);
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.RestaurantDash .sections .main .menu_items .menu_item button:hover {
+    background-color: green;
+    transition: 0.3s;
+    transform: scale(1.125);
+}
+
+.RestaurantDash .sections .main p {
+    margin-top: 10%;
+}
+
+.RestaurantDash .sections .main p span {
+    color: blue;
+    cursor: pointer;
+}
+
+.RestaurantDash .sections .main form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+}
+
+.RestaurantDash .sections .main form input {
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+    padding-top: 2%;
+}
+
+.RestaurantDash .sections .main form button {
+    outline: 0;
+    border: 0;
+    margin-top: 5%;
+    background-color: green;
+    color: var(--white);
+    border-radius: 5px;
+    padding: 0 20px;
+}
+
+
+/*
+*
+* Checkout*/
+
+.CheckOut {
+    padding: 5%;
+    text-align: center;
+    position: relative;
+}
+
+.CheckOut .user {
+    z-index: 5;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background-color: var(--darkred);
+    padding: 1%;
+    border-radius: 50%;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.CheckOut .dropdown {
+    background-color: var(--white);
+    position: absolute;
+    top: 10%;
+    right: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1%;
+    width: auto;
+    height: 100px;
+    border-radius: 5px 0 5px 5px;
+    color: var(--darkred);
+    text-align: right;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.CheckOut .dropdown span:nth-child(2) {
+    cursor: pointer;
+}
+
+.CheckOut .open {
+    opacity: 1;
+}
+
+.CheckOut input {
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+    margin: 2%;
+    width: 50%;
+}
+
+.CheckOut input[type="submit"] {
+    width: fit-content;
+    background-color: green;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    border-radius: 5px;
+    padding: 1%;
+}
+
+.CheckOut .menu_container {
+    display: flex;
+    justify-content: center;
+}
+
+.CheckOut .menu {
+    padding: 5%;
+    width: 60%;
+}
+
+.CheckOut .menu>h1 {
+    color: var(--darkred);
+    padding-bottom: 1%;
+    border-bottom: 1px solid var(--darkred);
+    display: inline-block;
+}
+
+.CheckOut .menu .menu_item .item_details {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 0;
+    border-bottom: 1px solid #000;
+}
+
+.CheckOut .menu .menu_item .item_details * {
+    width: 50%;
+}
+
+.CheckOut .menu .menu_item .item_details>h1 {
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+.CheckOut .menu .menu_item .item_details .price {
+    text-align: right;
+}
+
+.CheckOut .menu .menu_item .item_details .price span {
+    padding: 0 5%;
+}
+
+.CheckOut .menu .total_container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.CheckOut .menu .total_container .total {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 0;
+}
+
+
+/* 
+*
+* Footer */
+
+.Footer {
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.Footer>p {
+    font-size: 1.2rem;
+}
+
+.Footer .copyright {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkred);
+}
+
+.Footer .copyright span {
+    display: inline-block;
+    padding: 0.25%;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+@media screen and (max-width:576px) {
+    /*
+    *
+    * Customer home page*/
+    .CustomerHome h1 {
+        font-size: 1.5em;
+    }
+    .CustomerHome .restaurants a.restaurant_card {
+        width: 100%;
+    }
+    .CustomerHome .header .location_input input {
+        width: 70vw;
+        height: 50px;
+        font-size: 1.2em;
+    }
+    /*
+    *
+    *Restaurant Page*/
+    .RestaurantPage .Restaurant_header .restaurant_info {
+        font-size: 1.3rem;
+    }
+    .RestaurantPage .Restaurant_menu {
+        padding: 5%;
+    }
+    .RestaurantPage .Restaurant_menu .menu_items .menu_item {
+        padding: 10% 0;
+    }
+    .RestaurantPage .Restaurant_menu .subtotal {
+        margin: 10% 0;
+    }
+    .RestaurantPage .Restaurant_menu .subtotal button {
+        padding: 5px;
+        font-size: 1rem;
+        margin-left: 10%;
+    }
+    /*
+    *
+    *Restaurant dashboard*/
+    .RestaurantDash .sections .sidebar {
+        width: 10%;
+    }
+    .RestaurantDash .sections .sidebar a {
+        margin: 30% 0;
+    }
+    .RestaurantDash .sections .sidebar a i {
+        display: block;
+    }
+    .RestaurantDash .sections .sidebar a span {
+        display: none;
+    }
+    .RestaurantDash .sections .main {
+        width: 90%;
+    }
+    .RestaurantDash .sections .main .menu_items .menu_item .item_details h1 {
+        font-size: 1.5rem;
+    }
+    .RestaurantDash .sections .main .menu_items .menu_item button {
+        font-size: 1rem;
+    }
+    /* 
+    *
+    * Footer */
+    .Footer .copyright {
+        flex-direction: column;
+        height: fit-content;
+        position: relative;
+        padding-bottom: 0;
+    }
+    .Footer .copyright span:nth-child(2) {
+        display: none;
+    }
+}

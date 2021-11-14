@@ -1,0 +1,285 @@
+/* 
+*
+* Form Home Page */
+
+.Home .bg_image {
+    background: url("https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1901&q=80");
+    background-position: top, bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg_image button {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.Home h1 {
+    text-align: center;
+    padding-top: 400px;
+    padding-bottom: 30px;
+    color: #FF2626;
+    font-size: 63px;
+    font-weight: bold;
+}
+
+.Home p {
+    text-align: center;
+    color: #BD1616;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.Home .buttons a {
+    display: block;
+}
+
+.Login .loginbg_image {
+    background: url("https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1901&q=80");
+    background-position: top, bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Login h1 {
+    color: #FF2626;
+    text-align: center;
+    padding-top: 300px;
+}
+
+.Login form {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px 0 rgba(240, 234, 234, 0.2), 0 6px 20px 0 rgba(240, 230, 230, 0.19);
+}
+
+.Login input {
+    border-radius: 10px;
+}
+
+.Login h1 {
+    text-align: center;
+}
+
+.Login label {
+    color: #FF2626;
+}
+
+.Login .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+.Login img.avatar {
+    width: 30%;
+    border-radius: 50%;
+}
+
+.Login .container {
+    padding-top: 50px;
+    width: 1500px;
+}
+
+.Login h3 {
+    color: #FF2626;
+    text-align: center;
+}
+
+.Login hr {
+    color: #FF2626;
+    margin-bottom: 20px;
+}
+
+.Signup .signbg_image {
+    background: url("https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1901&q=80");
+    background-position: top, bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Signup h1 {
+    color: #FF2626;
+    text-align: center;
+    padding-top: 300px;
+}
+
+.Signup form {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px 0 rgba(240, 234, 234, 0.2), 0 6px 20px 0 rgba(240, 230, 230, 0.19);
+}
+
+.Signup input {
+    border-radius: 10px;
+}
+
+.Signup h1 {
+    text-align: center;
+}
+
+.Signup label {
+    color: #FF2626;
+}
+
+.Signup .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+.Signup img.avatar {
+    width: 30%;
+    border-radius: 50%;
+}
+
+.Signup .container {
+    padding-top: 50px;
+    width: 1500px;
+}
+
+.Signup h3 {
+    color: #FF2626;
+    text-align: center;
+}
+
+.Signup hr {
+    color: #FF2626;
+    margin-bottom: 20px;
+}
+
+.Login_Restaurant .Login_Restaurantbg_image {
+    background: url("https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1901&q=80");
+    background-position: top, bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Login_Restaurant h1 {
+    color: #FF2626;
+    text-align: center;
+    padding-top: 300px;
+}
+
+.Login_Restaurant form {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px 0 rgba(240, 234, 234, 0.2), 0 6px 20px 0 rgba(240, 230, 230, 0.19);
+}
+
+.Login_Restaurant input {
+    border-radius: 10px;
+}
+
+.Login_Restaurant h1 {
+    text-align: center;
+}
+
+.Login_Restaurant label {
+    color: #FF2626;
+}
+
+.Login_Restaurant h3 {
+    color: #FF2626;
+    text-align: center;
+}
+
+.Login_Restaurant hr {
+    color: #FF2626;
+    margin-bottom: 20px;
+}
+
+.Login_Restaurant .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+.Login_Restaurant img.avatar {
+    width: 30%;
+    border-radius: 50%;
+}
+
+.Signup_Restaurant .Signup_Restaurantbg_image {
+    background: url("https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1901&q=80");
+    background-position: top, bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Signup_Restaurant h1 {
+    color: #FF2626;
+    text-align: center;
+    padding-top: 300px;
+}
+
+.Signup_Restaurant form {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px 0 rgba(240, 234, 234, 0.2), 0 6px 20px 0 rgba(240, 230, 230, 0.19);
+}
+
+.Signup_Restaurant input {
+    border-radius: 10px;
+}
+
+.Signup_Restaurant h1 {
+    text-align: center;
+}
+
+.Signup_Restaurant label {
+    color: #FF2626;
+}
+
+.Signup_Restaurant .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+.Signup_Restaurant img.avatar {
+    width: 30%;
+    border-radius: 50%;
+}
+
+.Signup_Restaurant .container {
+    padding-top: 50px;
+    width: 1500px;
+}
+
+.Signup_Restaurant h3 {
+    color: #FF2626;
+    text-align: center;
+}
+
+.Signup_Restaurant hr {
+    color: #FF2626;
+    margin-bottom: 20px;
+}
+
+.Login form,
+.Login_Restaurant form,
+.Signup form,
+.Signup_Restaurant form {
+    padding: 5%;
+}
+
+.Login .container,
+.Login_Restaurant .container,
+.Signup .container,
+.Signup_Restaurant .container {
+    padding-bottom: 5%;
+}
+
+.Home .home_button {
+    padding-bottom: 5%;
+}
+
+.Login_Restaurant h3 {
+    color: #FF2626;
+    text-align: center;
+}
